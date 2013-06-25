@@ -16,7 +16,7 @@
         "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "PSR-0": {
+        "psr-0": {
             "Volch\\": "src/",
             "Template": "src/"
         }
