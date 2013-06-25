@@ -12,4 +12,15 @@ class TemplateTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals('template', $result);
     }
+
+    public function testVarOutput()
+    {
+        $source = '{var}';
+        $template = new Template($source);
+        $template->assign('var', 'value');
+
+        $result = $template->parse();
+
+        $this->assertEquals('value', $result);
+    }
 }

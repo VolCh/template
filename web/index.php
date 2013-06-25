@@ -9,5 +9,6 @@ $templateHtml =<<<END_HTML
 END_HTML;
 
 $template = new Template($templateHtml);
+$template->assign('my_var', 'test');
 
 echo $template->parse();
